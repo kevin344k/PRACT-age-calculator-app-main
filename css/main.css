@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
+main {
+  padding: 20px;
+  min-width: 380px;
+  box-sizing: border-box;
+}
+main section {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px 20px 30%;
+  max-width: 375px;
+  min-width: 340px;
+  margin-top: 500px;
+}
+main section .section-inputs {
+  margin-top: 20px;
+}
+main section .section-inputs .inputs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main section .section-inputs .inputs label, main section .section-inputs .inputs .error-label {
+  color: hsl(0, 1%, 44%);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+main section .section-inputs .inputs label .span-valid--day, main section .section-inputs .inputs .error-label .span-valid--day,
+main section .section-inputs .inputs label .span-valid--month,
+main section .section-inputs .inputs .error-label .span-valid--month,
+main section .section-inputs .inputs label .span-valid--year,
+main section .section-inputs .inputs .error-label .span-valid--year {
+  color: hsl(0, 100%, 67%);
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+}
+main section .section-inputs .inputs label .span-valid--show, main section .section-inputs .inputs .error-label .span-valid--show {
+  display: none;
+}
+main section .section-inputs .inputs .error-label {
+  color: hsl(0, 100%, 67%);
+}
+main section .section-inputs .inputs input, main section .section-inputs .inputs .error-input {
+  font-size: 2rem;
+  border: 1px solid hsl(0, 0%, 94%);
+  border-radius: 10px;
+  width: 80px;
+  padding: 10px;
+  color: hsl(0, 0%, 8%);
+  font-family: "Poppins", sans-serif;
+}
+main section .section-inputs .inputs input:focus, main section .section-inputs .inputs .error-input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+  outline: none;
+}
+main section .section-inputs .inputs .error-input {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+main section .section-inputs .section-icon {
+  position: relative;
+  height: 50px;
+  border-bottom: 2px solid hsl(0, 0%, 94%);
+}
+main section .section-inputs .section-icon span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  top: 30px;
+  left: calc(50% - 20px);
+}
+main section .section-inputs .section-icon span:hover {
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+main section .section-inputs .section-icon span img {
+  width: 20px;
+  height: 20px;
+}
+main section .section-inputs #span-valid--date {
+  color: hsl(0, 100%, 67%);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: none;
+}
+main section .result-age--text {
+  margin: 50px 0;
+}
+main section .result-age--text p {
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  color: hsl(0, 0%, 8%);
+  line-height: 50px;
+}
+main section .result-age--text p span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 1440px) {
+  main section {
+    max-width: 600px;
+    padding: 40px;
+  }
+  main section .section-inputs {
+    margin-top: 20px;
+  }
+  main section .section-inputs .inputs {
+    justify-content: flex-start;
+  }
+  main section .section-inputs .inputs label, main section .section-inputs .inputs .error-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  main section .section-inputs .inputs label input, main section .section-inputs .inputs .error-label input, main section .section-inputs .inputs label .error-input, main section .section-inputs .inputs .error-label .error-input {
+    width: 120px;
+  }
+  main section .section-inputs .section-icon {
+    height: 70px;
+  }
+  main section .section-inputs .section-icon span {
+    width: 80px;
+    height: 80px;
+    left: calc(90% - 20px);
+  }
+  main section .section-inputs .section-icon span img {
+    width: 40px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */

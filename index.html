@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="section-inputs">
+          <div class="inputs">
+            <label for="days" id="label-days">DAY 
+              <input
+                type="text"
+                name="days"
+                id="inputDays"
+                placeholder="DD"
+                maxlength="2"
+              />
+              <span class="span-valid--day span-valid--show"
+                >Must be a valid day</span
+              >
+            </label>
+            <label
+              for="
+              month"
+              id="label-month"
+              >MONTH
+              <input
+                type="text"
+                name="month"
+                id="inputMonth"
+                placeholder="MM"
+                maxlength="2"
+              />
+              <span class="span-valid--month span-valid--show"
+                >Must be a valid month</span
+              ></label
+            >
+            <label
+              for="
+            years"
+              id="label-years"
+              >YEAR
+              <input
+                type="text"
+                name="years"
+                id="inputYears"
+                placeholder="YYYY"
+                maxlength="4"
+              />
+              <span class="span-valid--year span-valid--show"
+                >Must be a valid year</span
+              ></label
+            >
+          </div>
+          <span id="span-valid--date">Must be a valid date</span>
+          <div class="section-icon">
+            <div class="border-line">
+              <span class="ico"
+                ><img src="./assets/images/icon-arrow.svg" alt=""
+              /></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-age--text">
+          <p><span id="result-year">--</span> years</p>
+          <p><span id="result-monts">--</span> months</p>
+          <p><span id="result-days">--</span> days</p>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
