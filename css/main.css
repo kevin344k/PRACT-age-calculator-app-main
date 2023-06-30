@@ -16,6 +16,7 @@ main {
   padding: 20px;
   min-width: 380px;
   box-sizing: border-box;
+  margin: auto;
 }
 main section {
   background-color: hsl(0, 0%, 100%);
@@ -23,7 +24,6 @@ main section {
   border-radius: 20px 20px 30%;
   max-width: 375px;
   min-width: 340px;
-  margin-top: 500px;
 }
 main section .section-inputs {
   margin-top: 20px;
