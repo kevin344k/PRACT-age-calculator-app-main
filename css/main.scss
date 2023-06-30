@@ -37,7 +37,7 @@ main {
   padding: 20px;
   min-width: 380px;
   box-sizing: border-box;
-margin: auto;
+
 
   section {
 
@@ -46,6 +46,7 @@ margin: auto;
     border-radius: 20px 20px 30%;
     max-width: 375px;
     min-width: 340px;
+    margin: auto;
     .section-inputs {
       margin-top: 20px;
       .inputs {
